@@ -1,7 +1,6 @@
 import React from 'react';
-import TemplateRedux from './components/TemplateRedux';
 
-export default class App extends React.Component {
+export default class TemplateComponent extends React.Component { //
     constructor(props){
         super(props);
         this.state = {
@@ -12,7 +11,7 @@ export default class App extends React.Component {
     render(){
         return (
             <>
-                <TemplateRedux></TemplateRedux>
+                <h1>TemplateComponent</h1>
             </>
         );
     }   

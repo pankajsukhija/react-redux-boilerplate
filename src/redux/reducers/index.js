@@ -1,4 +1,4 @@
-import isAwesomeReducer from './isAwesome.js'
+import isAwesomeReducer from './isAwesome'
 import {combineReducers} from 'redux';
 
 const allReducers = combineReducers({

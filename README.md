@@ -1,3 +1,5 @@
+This is some boilerplate stuff and demo code using React Redux Hooks for state management for quick start of a Redux based project. The tutorial by Dev Ed (https://www.youtube.com/watch?v=CVpUuw9XSjY) was followed.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

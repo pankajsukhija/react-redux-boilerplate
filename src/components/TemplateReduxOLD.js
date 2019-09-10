@@ -1,3 +1,6 @@
+// Redux usage demo using class based components and connect from react-redux
+// Will keep this here for now
+
 import React from 'react';
 import {connect} from 'react-redux';
 import {setAwsmAction, unsetAwsmAction} from '../redux/actions'

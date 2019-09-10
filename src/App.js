@@ -1,21 +1,27 @@
 import React from 'react';
-import TemplateRedux from './components/TemplateRedux';
-import './index.css';
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch
+  } from 'react-router-dom'
+import Home from './components/Home'
+import NotFoundPage from './components/404'
+import TemplateReduxHooks from './components/TemplateReduxHooks';
 
 
-export default class App extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            //
-        }
-    }
-
-    render(){
-        return (
-            <>
-                <TemplateRedux></TemplateRedux>
-            </>
-        );
-    }   
+export default function App() {
+    return (
+        <>
+            <Router>
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/redux" component={TemplateReduxHooks} />
+                    {// A <Switch> renders the first child <Route> that matches.
+                    // A <Route> with no path always matches.
+                    }
+                    <Route component={NotFoundPage} />
+                </Switch>
+            </Router>
+        </>
+    );
 }
